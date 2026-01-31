@@ -1,4 +1,4 @@
-# Env Spoiler
+# Env Masker
 
 A VS Code extension that specifically masks values in `.env` files to prevent accidental exposure during screen sharing or streaming.
 
@@ -14,8 +14,8 @@ A VS Code extension that specifically masks values in `.env` files to prevent ac
 ## Usage
 
 - **Activate**: Open any `.env`, `.properties`, or `plaintext` file that looks like an environment file.
-- **Toggle**: Use `Ctrl+Shift+P` -> `Env Spoiler: Toggle Masking`.
-- **Hide All**: Use `Ctrl+Shift+P` -> `Env Spoiler: Hide All` to re-mask revealed values.
+- **Toggle**: Use `Ctrl+Shift+P` -> `Env Masker: Toggle Masking`.
+- **Hide All**: Use `Ctrl+Shift+P` -> `Env Masker: Hide All` to re-mask revealed values.
 
 ## Installation
 

@@ -1,12 +1,12 @@
 {
-    "name": "env-spoiler",
-    "displayName": "Env Spoiler",
+    "name": "env-masker",
+    "displayName": "Env Masker",
     "description": "Masks sensitive values in .env files to prevent accidental exposure.",
     "version": "0.0.1",
     "publisher": "hqnseung",
     "repository": {
         "type": "git",
-        "url": "https://github.com/hqnseung/env-spoiler"
+        "url": "https://github.com/hqnseung/env-masker"
     },
     "engines": {
         "vscode": "^1.96.0"
@@ -16,25 +16,25 @@
     ],
     "activationEvents": [
         "onStartupFinished",
-        "onCommand:envSpoiler.toggle",
-        "onCommand:envSpoiler.hideAll"
+        "onCommand:envMasker.toggle",
+        "onCommand:envMasker.hideAll"
     ],
     "main": "./dist/extension.js",
     "contributes": {
         "commands": [
             {
-                "command": "envSpoiler.toggle",
-                "title": "Env Spoiler: Toggle Masking"
+                "command": "envMasker.toggle",
+                "title": "Env Masker: Toggle Masking"
             },
             {
-                "command": "envSpoiler.hideAll",
-                "title": "Env Spoiler: Hide All"
+                "command": "envMasker.hideAll",
+                "title": "Env Masker: Hide All"
             }
         ],
         "configuration": {
-            "title": "Env Spoiler",
+            "title": "Env Masker",
             "properties": {
-                "envSpoiler.enable": {
+                "envMasker.enable": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable masking of .env values."

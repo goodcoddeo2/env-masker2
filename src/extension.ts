@@ -1,8 +1,8 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-    console.log('Env Spoiler is now active!');
-    vscode.window.showInformationMessage('Env Spoiler Activated! Open a .env file to test.');
+    console.log('Env Masker is now active!');
+    vscode.window.showInformationMessage('Env Masker Activated! Open a .env file to test.');
 
     // Create a decoration type that masks text
     const maskingDecorationType = vscode.window.createTextEditorDecorationType({
@@ -118,14 +118,14 @@ export function activate(context: vscode.ExtensionContext) {
     }
 
     // Register toggle command
-    const toggleCommand = vscode.commands.registerCommand('envSpoiler.toggle', () => {
+    const toggleCommand = vscode.commands.registerCommand('envMasker.toggle', () => {
         isEnabled = !isEnabled;
-        vscode.window.setStatusBarMessage(`Env Spoiler: ${isEnabled ? 'Enabled' : 'Disabled'}`, 3000);
+        vscode.window.setStatusBarMessage(`Env Masker: ${isEnabled ? 'Enabled' : 'Disabled'}`, 3000);
         updateDecorations(false);
     });
     context.subscriptions.push(toggleCommand);
 
-    const hideAllCommand = vscode.commands.registerCommand('envSpoiler.hideAll', () => {
+    const hideAllCommand = vscode.commands.registerCommand('envMasker.hideAll', () => {
         revealedKeys.clear();
         updateDecorations(false);
     });
