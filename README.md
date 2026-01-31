@@ -2,6 +2,8 @@
 
 A VS Code extension that specifically masks values in `.env` files to prevent accidental exposure during screen sharing or streaming.
 
+<img width="583" height="202" alt="image" src="https://github.com/user-attachments/assets/8964f857-ef42-45d3-a531-f3f42fac7795" />
+
 ## Features
 
 - **Automatic Masking**: Automatically detects `.env` files and masks values after the `=` sign.
